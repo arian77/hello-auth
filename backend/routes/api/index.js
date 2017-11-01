@@ -1,9 +1,9 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/", (reg, res, nest) => {
+router.get("/", (reg, res, next) => {
   res.send({
-    mesage: "Hello roots"
+    mesage: "Hello API"
   });
 });
 
