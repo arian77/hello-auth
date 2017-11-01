@@ -7,6 +7,7 @@ var bodyParser = require("body-parser");
 
 var index = require("./routes");
 var api = require("./routes/api");
+var auth = require("./routes/auth");
 var users = require("./routes/api/users");
 var secrets = require("./routes/api/secrets");
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", index);
 app.use("/api", api);
+app.use("/auth", auth);
 app.use("/api/users", users);
 app.use("/api/secrets", secrets);
 
