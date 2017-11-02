@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/", (reg, res, nest) => {
+router.get("/", (req, res, next) => {
   res.send({
     mesage: "Hello roots"
   });

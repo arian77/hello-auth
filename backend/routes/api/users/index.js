@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 const DATA = require("./data.json");
 
-router.get("/", (reg, res, nest) => {
+router.get("/", (req, res, next) => {
   res.send(DATA);
 });
 
